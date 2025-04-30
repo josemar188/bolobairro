@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Minha Loja Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#carrinho">Carrinho (<span id="carrinho-quantidade">0</span>)</a></li>
+                <li><a href="#historico">Histórico de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="lista-de-produtos">
+                <div class="produto">
+                    <img src="imagem1.jpg" alt="Produto 1" width="100">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do Produto 1.</p>
+                    <p>Preço: 19.99 €</p>
+                    <button class="adicionar-ao-carrinho" data-id="1" data-nome="Produto 1" data-preco="19.99">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagem2.jpg" alt="Produto 2" width="100">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do Produto 2.</p>
+                    <p>Preço: 29.99 €</p>
+                    <button class="adicionar-ao-carrinho" data-id="2" data-nome="Produto 2" data-preco="29.99">Adicionar ao Carrinho</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <div id="itens-do-carrinho">
+                <p>O seu carrinho está vazio.</p>
+            </div>
+            <div id="resumo-do-carrinho">
+                <p>Total: <span id="total-do-carrinho">0.00</span> €</p>
+                <button id="finalizar-compra">Finalizar Compra</button>
+            </div>
+        </section>
+
+        <section id="historico">
+            <h2>Histórico de Compras</h2>
+            <div id="lista-de-compras">
+                <p>Ainda não realizou nenhuma compra.</p>
+                <ul>
+                    <li>Compra #1 - 01/05/2025 - Total: 49.98 €</li>
+                    <li>Compra #2 - 15/05/2025 - Total: 12.50 €</li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja Online</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
