@@ -108,3 +108,36 @@ body {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+
+.carrinho-lista {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.carrinho-item span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.btn-remover {
+  background: none;
+  border: none;
+  color: crimson;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carrinho-total {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
