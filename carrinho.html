@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho | Delícias da Ana</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="luxo-header">
+    <div class="container">
+      <h1>Delícias da Ana</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="luxo-main">
+    <h2>Seu Carrinho</h2>
+    <div id="carrinho-itens" class="carrinho-lista"></div>
+    <div class="carrinho-total">
+      <strong>Total:</strong> R$ <span id="total">0.00</span>
+    </div>
+    <button class="btn-luxo" onclick="finalizarPedido()">Finalizar Pedido</button>
+  </main>
+
+  <footer class="luxo-footer">
+    <p>&copy; 2025 Delícias da Ana. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
