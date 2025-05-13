@@ -25,19 +25,19 @@
         <img src="imagens/bolo1.jpg" alt="Bolo de Chocolate Belga">
         <h3>Bolo de Chocolate Belga</h3>
         <p>R$ 120,00</p>
-        <button class="btn-luxo">Adicionar ao Carrinho</button>
+        <button class="btn-luxo" onclick="adicionarAoCarrinho('Bolo de Chocolate Belga', 120.00)">Adicionar ao Carrinho</button>
       </div>
       <div class="produto-card">
         <img src="imagens/bolo2.jpg" alt="Cheesecake de Frutas Vermelhas">
         <h3>Cheesecake de Frutas Vermelhas</h3>
         <p>R$ 110,00</p>
-        <button class="btn-luxo">Adicionar ao Carrinho</button>
+        <button class="btn-luxo" onclick="adicionarAoCarrinho('Bolo de Chocolate Belga', 120.00)">Adicionar ao Carrinho</button>
       </div>
       <div class="produto-card">
         <img src="imagens/bolo3.jpg" alt="Torta de Pistache">
         <h3>Torta de Pistache</h3>
         <p>R$ 135,00</p>
-        <button class="btn-luxo">Adicionar ao Carrinho</button>
+       <button class="btn-luxo" onclick="adicionarAoCarrinho('Bolo de Chocolate Belga', 120.00)">Adicionar ao Carrinho</button>
       </div>
     </div>
   </main>
@@ -47,3 +47,12 @@
   </footer>
 </body>
 </html>
+<script>
+function adicionarAoCarrinho(nome, preco) {
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+  carrinho.push({ nome, preco });
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  alert(`${nome} foi adicionado ao carrinho.`);
+}
+</script>
+  
